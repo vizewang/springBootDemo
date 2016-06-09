@@ -14,6 +14,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>gs-accessing-data-mongodb</module>
+        <module>restful-demo</module>
     </modules>
 
 </project>
