@@ -5,16 +5,43 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.vizewang.demo</groupId>
     <artifactId>springBootDemo</artifactId>
-    <version>1.0-SNAPSHOT</version>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.2.5.RELEASE</version>
+        <version>1.4.0.M3</version>
     </parent>
     <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
     <modules>
         <module>gs-accessing-data-mongodb</module>
         <module>restful-demo</module>
+        <module>gs-consuming-rest</module>
     </modules>
-
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <repositories>
+        <repository>
+            <id>spring-snapshots</id>
+            <url>http://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <url>http://repo.spring.io/milestone</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-snapshots</id>
+            <url>http://repo.spring.io/snapshot</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <url>http://repo.spring.io/milestone</url>
+        </pluginRepository>
+    </pluginRepositories>
 </project>
